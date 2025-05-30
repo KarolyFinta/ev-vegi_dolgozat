@@ -4,21 +4,25 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-nav {
-    background-color: burlywood;
+.nav {
+    background-color: rgb(219, 169, 104);
     padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 nav .link {
+    background-color: rgb(243, 205, 156);
     color: rgb(112, 73, 51);
     text-decoration: none;
-    padding: 1em;
-    margin: 2em;
+    padding: 0.75em 1.5em;
+    margin: 0.5em 0.5em;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 nav .link:hover {
     background-color: cadetblue;
+    border-radius: 10px;
 }
 
 h1 {
@@ -31,4 +35,58 @@ article {
     padding: 0 1em;
 }
 
+section {
+    padding: 10pt;
+    background-color: rgb(194, 168, 137);
+    border-radius: 10px;
+    border-right: 20px solid rgb(65, 39, 17);
+    margin-bottom: 2em;
+
+}
+
+footer {
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+}
+
+.szoveg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: start;
+}
+
+.szoveg li {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.szoveg img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width:600px) {
+
+    body {
+        font-size: larger;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .link {
+        display: block;
+        text-align: center;
+    }
+    
+    .szoveg {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
 
